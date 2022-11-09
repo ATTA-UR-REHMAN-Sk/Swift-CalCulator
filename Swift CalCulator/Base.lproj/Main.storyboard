@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvE-1c-caJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_CalCulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculimg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-g7-gR5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-UB-OaX">
+                                <rect key="frame" x="127" y="383" width="160" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="dj8-g7-gR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PP1-y7-0qg"/>
+                            <constraint firstItem="dj8-g7-gR5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wex-rB-baz"/>
+                            <constraint firstItem="dj8-g7-gR5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aJw-ls-T0F"/>
+                            <constraint firstItem="dj8-g7-gR5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="r7c-Tl-XCc"/>
+                            <constraint firstItem="dj8-g7-gR5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wkn-Of-Xki"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FH9-Yv-hIw"/>
+                    <connections>
+                        <outlet property="ActiveIndicator" destination="NTC-UB-OaX" id="BHm-k9-6OK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597.10144927536237" y="-83.035714285714278"/>
+        </scene>
+        <!--Cal Culator-->
+        <scene sceneID="C3a-LJ-7pB">
+            <objects>
+                <viewController storyboardIdentifier="CalCulator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wAc-f1-z63" customClass="CalCulator" customModule="Swift_CalCulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHU-Wu-2da">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMb-dy-f2I">
+                                <rect key="frame" x="20" y="90" width="374" height="717"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grr-ba-wSr">
+                                        <rect key="frame" x="17" y="34" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="elq-1m-eZk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OMb-dy-f2I" firstAttribute="top" secondItem="elq-1m-eZk" secondAttribute="top" constant="46" id="8eO-rd-taM"/>
+                            <constraint firstItem="OMb-dy-f2I" firstAttribute="trailing" secondItem="hHU-Wu-2da" secondAttribute="trailingMargin" id="GYw-X0-YVq"/>
+                            <constraint firstItem="OMb-dy-f2I" firstAttribute="centerX" secondItem="hHU-Wu-2da" secondAttribute="centerX" id="Ygi-SX-obE"/>
+                            <constraint firstItem="OMb-dy-f2I" firstAttribute="leading" secondItem="hHU-Wu-2da" secondAttribute="leadingMargin" id="cFf-Ls-8mv"/>
+                            <constraint firstItem="elq-1m-eZk" firstAttribute="bottom" secondItem="OMb-dy-f2I" secondAttribute="bottom" constant="55" id="sry-uY-PkK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRI-8J-aDl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289.8550724637682" y="-83.035714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FF9-IE-Cuj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jvE-1c-caJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M4n-Y0-Bij">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G7S-UC-HOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiq-0k-gGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313.04347826086956" y="-83.035714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calculimg.jpeg" width="2000" height="3000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
